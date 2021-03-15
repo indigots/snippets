@@ -1,7 +1,7 @@
-diff --git a/a/drivers/net/ethernet/broadcom/bnx2x/bnx2x.h b/b/drivers/net/ethernet/broadcom/bnx2x/bnx2x.h
+diff --git a/drivers/net/ethernet/broadcom/bnx2x/bnx2x.h b/drivers/net/ethernet/broadcom/bnx2x/bnx2x.h
 index 6026b53..210d761 100644
---- a/a/drivers/net/ethernet/broadcom/bnx2x/bnx2x.h
-+++ b/b/drivers/net/ethernet/broadcom/bnx2x/bnx2x.h
+--- a/drivers/net/ethernet/broadcom/bnx2x/bnx2x.h
++++ b/drivers/net/ethernet/broadcom/bnx2x/bnx2x.h
 @@ -1592,6 +1592,7 @@ struct bnx2x {
  	uint			num_ethernet_queues;
  	uint			num_cnic_queues;
@@ -10,10 +10,10 @@ index 6026b53..210d761 100644
  
  	u32			rx_mode;
  #define BNX2X_RX_MODE_NONE		0
-diff --git a/a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c b/b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c
+diff --git a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c
 index d581d0a..343cf01 100644
---- a/a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c
-+++ b/b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c
+--- a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c
++++ b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_link.c
 @@ -151,6 +151,7 @@ typedef int (*read_sfp_module_eeprom_func_p)(struct bnx2x_phy *phy,
  
  #define SFP_EEPROM_CON_TYPE_ADDR		0x2
@@ -174,10 +174,10 @@ index d581d0a..343cf01 100644
  			} else if (vars->link_status &
  				LINK_STATUS_SFP_TX_FAULT) {
  				/* Clean trail, interrupt corrects the leds */
-diff --git a/a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c b/b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c
+diff --git a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c
 index cff64e4..769738a 100644
---- a/a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c
-+++ b/b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c
+--- a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c
++++ b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_main.c
 @@ -105,6 +105,10 @@ static int disable_tpa;
  module_param(disable_tpa, int, 0444);
  MODULE_PARM_DESC(disable_tpa, " Disable the TPA (LRO) feature");
@@ -198,10 +198,10 @@ index cff64e4..769738a 100644
  	bp->disable_tpa = disable_tpa;
  	bp->disable_tpa |= !!IS_MF_STORAGE_ONLY(bp);
  	/* Reduce memory usage in kdump environment by disabling TPA */
-diff --git a/a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h b/b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h
+diff --git a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h
 index a43dea2..7009b14 100644
---- a/a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h
-+++ b/b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h
+--- a/drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h
++++ b/drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h
 @@ -7169,7 +7169,8 @@ Theotherbitsarereservedandshouldbezero*/
  #define MDIO_PMA_REG_8727_PCS_GP		0xc842
  #define MDIO_PMA_REG_8727_OPT_CFG_REG		0xc8e4
