@@ -1,5 +1,7 @@
 ## HOW TO BUILD THE UNIFIED BCM 57711/57810 KERNEL MODULE FOR VyOS (v1.3.0-rc1)
-Updated and tested vyos-1.3.0-rc1-amd64.iso\
+<b>Resulting md5sum: d4304df21a349a0a4f0b950c91590aa4 bnx2x.ko</b>
+
+Updated for vyos-1.3.0-rc1-amd64.iso\
 Using Debian Buster debian-10.8.0-amd64-netinst.iso as the base for the build
 
 What is VyOS : https://vyos.readthedocs.io/en/latest/history.html
