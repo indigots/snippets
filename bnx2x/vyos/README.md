@@ -63,7 +63,7 @@ Go to: https://github.com/vyos/vyos-build/commits/equuleus and find the commit s
 
 <b>Step 10:</b> Copy upnatom's unified patch to the vyos kernel patch directory 
 
-    curl https://raw.githubusercontent.com/JAMESMTL/snippets/master/bnx2x/patches/git/bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch -o ~/vyos-build/packages/linux-kernel/patches/kernel/bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch
+    curl https://raw.githubusercontent.com/indigots/snippets/master/bnx2x/patches/git/bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch -o ~/vyos-build/packages/linux-kernel/patches/kernel/bnx2x_warpcore_8727_2_5g_sgmii_txfault.patch
 
 <b>Step 11:</b> Clone the stable branch of the linux kernel into the vyos build environment
 
