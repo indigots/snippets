@@ -10,7 +10,7 @@ The sole objective of this post is to build the module
 
 <b>Step 1:</b> Install VyOS and create an image from the console
 
-I downloaded the VyOS rolling release from here: https://vyos.net/get/snapshots/#vyos-1.3.0-rc1
+I downloaded the VyOS snapshot release from here: https://vyos.net/get/snapshots/#vyos-1.3.0-rc1
 
 see Install Vyos : https://vyos.readthedocs.io/en/latest/install.html (*Note: I didn't bother veryfing the signatures)
 
